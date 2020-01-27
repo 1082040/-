@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+struct student
+{
+ int id;
+ char name[10];
+}program1;
+ 
+int main()
+{
+ int i = 0;
+ cout << "請輸入名字:" << endl;
+ cin >> program1.name;
+ cout << "請輸入id:" << endl;
+ cin >> program1.id;
+ cout << "新名字:" << endl;
+ for (i = 0; program1.name[i]; i++)
+ {
+  program1.name[i] -= 32;
+  cout << program1.name[i];
+ }
+ cout << endl;
+ cout << "新id:" << endl << "A" << program1.id << endl;
+ system ("pause");
+};

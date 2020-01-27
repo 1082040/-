@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+void main()
+{
+ long a;
+ cout << "sec: ";
+ cin >> a;  
+ cout << a << "´«ºâ:" << endl;
+ cout << a / 86400 << "day" << endl;
+ a = a - a / 86400*86400;
+ 
+ cout << a / 3600 << "hr" << endl;
+ a = a - a / 3600*3600;
+ 
+ cout << a / 60 << "min" << endl;
+ a = a - a / 60*60;
+ 
+ cout << a << "sec" << endl;
+ system("pause");
+}

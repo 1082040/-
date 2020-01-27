@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int A[2][3] = {3,1,2,2,0,1};
+int B[3][2] = {1,0,1,2,0,1};
+int C[2][2];
+int i, j, k;
+/*
+cout << "¿é¤J°}¦CA(2x3): " << endl;
+for (i = 0; i < 2; i++) {
+for (j = 0; j < 3; j++) {
+cin >> A[i][j];
+}
+}
+cout << "¿é¤J°}¦CB(3x2): " << endl;
+for (i = 0; i < 3; i++) {
+for (j = 0; j < 2; j++) {
+cin >> B[i][j];
+}
+}*/
+for (i = 0; i < 2; i++) {
+for (j = 0; j < 2; j++) {
+C[i][j] = 0;
+for (k = 0; k < 3; k++) {
+C[i][j] += A[i][k] * B[k][j];
+}
+cout << C[i][j] << " ";
+}
+}
+
+system("pause");
+}
+
